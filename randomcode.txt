@@ -1,0 +1,27 @@
+SELECT p.title,p.body, u.first_name, c.comment
+FROM posts p 
+JOIN comment c on c.post_id = p.id                                                                                                                                                                                                                            
+join userdata u on u.id = c.user_id
+
+
+SELECT u.first_name, u.last_name, p.title, p.body, c.comment, c.date
+FROM posts p
+JOIN comment c on c.post_id = p.id
+JOIN userdata u on u.id = c.user_id
+
+$query=$conn->query("SELECT u.first_name,u.last_name,p.title,p.id,p.body,c.comment,c.date
+                           FROM posts p
+                           JOIN comment c on c.post_id = p.id
+                           JOIN userdata u on u.id = c.user_id
+                           GROUP BY p.id")->fetchAll();
+                           // var_dump($query);
+                           // die();
+                           foreach ($query as $post) {
+
+$post_user_id = $conn->prepare("SELECT user_id FROM posts WHERE id=$post_id");
+$post_user_id->execute();
+$results= $post_user_id->fetchAll(PDO::FETCH_OBJ);
+$user_id = $results[0]->user_id;
+// var_dump($user_id);
+// die();
+if ($logied_user_id == $user_id) {

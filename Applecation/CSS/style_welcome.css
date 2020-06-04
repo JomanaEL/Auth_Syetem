@@ -1,0 +1,81 @@
+body {
+  background-image: url(texture_ice_cream_drawings.jpg);
+  font-size: 1em !important;
+  color: #000 !important;
+  font-family: 'Roboto', !important;
+
+}
+.BOX {
+  text-align: center;
+  margin-bottom: auto;
+  margin-top: 40px;
+  margin-left: 70px;
+  margin-right: 40px;
+  background: #ffff;
+  padding: 20px 0px 20px 0px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #000;
+}
+
+h1{
+  padding-top: 30px;
+}
+
+.title {
+  border-top: solid;
+  border-color: #0095b6;
+  border-radius: 3px;
+  padding-top: 30px;
+}
+
+.body {
+text-align: left;
+
+}
+
+
+.POST_BOX {
+  text-align: center;
+  margin: 90px;
+  margin-top: 20px;
+  padding: 0px 20px 20px 20px;
+  border: solid;
+  border-color: #0095b6;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.COMMENTS_BOX {
+  text-align: left;
+  margin-top: 30px;
+  border-top: solid;
+  border-color: #0095b6;
+  border-radius: 3px;
+  overflow: auto;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.COMMENT_ADD td {
+  padding: 10px 10px 0px 60px;
+  text-align: left;
+
+}
+
+
+.COMMENT_POSTED td {
+  padding: 10px 10px 10px 90px;
+
+}
+
+textarea {
+  width: 570px;
+}
+
+hr {
+    margin: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
